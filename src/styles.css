@@ -1,0 +1,267 @@
+/*///////////////////// SCREEN CONTAINER///////////// */
+.ipod-container {
+  width: 25vw;
+  height: 95vh;
+  border: 1px solid black;
+  margin: 1px auto;
+  border-radius: 20px;
+  background-color: rgb(180, 175, 175);
+}
+
+/*///////////////////// SCREEN CONTAINER///////////// */
+.screen-container {
+  width: 90%;
+  height: 50%;
+  border: 3px solid black;
+  margin: 0px auto;
+  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/03/Download-free-background-nice-wallpaper-HD.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  /* border-radius: 20px; */
+  transition: transform ease-in-out 0.2s;
+}
+
+/* ////////////////////////////SCREEN MENU////////////// */
+.screen-menu {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  left: 0%;
+  background-color: white;
+  box-shadow: none;
+  overflow-x: hidden;
+  transition: width ease-in-out 0.2s;
+}
+.width-50 {
+  width: 50% !important;
+  box-shadow: 0px 0px 12px 1px rgb(82, 82, 82) !important;
+}
+
+.screen-menu > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  border: 1px solid rgb(190, 190, 190);
+  box-sizing: border-box;
+  white-space: nowrap; /* to turn off text wrapping in the screen menu */
+}
+.screen-menu p {
+  font-size: 20px;
+  overflow-wrap: normal;
+}
+
+.screen-menu > .selected {
+  background-color: rgb(89, 89, 255);
+}
+
+.app-logo {
+  background-color: #ff0053;
+  color: white;
+  font-size: large;
+}
+/* //////////////////////BUTTONS//////////////////////// */
+img {
+  width: 25px;
+  height: 25px;
+}
+.nav-section {
+  width: 90%;
+  height: 50%;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+.buttons-container {
+  width: 75%;
+  height: 70%;
+  border: 1px solid grey;
+  background-color: white;
+  margin: 0px auto;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-circle {
+  width: 50%;
+  height: 50%;
+  border-radius: inherit;
+}
+.menu-button {
+  position: absolute;
+  top: 0px;
+}
+.left-button {
+  position: absolute;
+  top: 43%;
+  left: 0;
+}
+.right-button {
+  position: absolute;
+  top: 43%;
+  right: 0;
+}
+.play-pause {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* ALL SONGS SCREEN ///////////////////////////////////////////////////////////// */
+.all-songs {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.all-songs-heading {
+  padding-bottom: 10px;
+  background-color: #6610f2;
+  margin: 0px;
+  height: 10%;
+  text-align: center;
+  color: white;
+}
+.all-songs-list {
+  background-color: #343a40;
+  height: 86%;
+}
+.all-songs-list > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  height: 14%;
+  color: white;
+}
+
+.selected-song {
+  background-color: #007bff;
+}
+
+/* ARTISTS SCREEN ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.artists-screen {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+
+/* ALBUMS SCREEN */
+.albums-screen {
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  width: 75%;
+  height: 75%;
+  margin: 13%;
+}
+
+/* IMAGES FOR EMPTY PAGES /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.screen-game > div {
+  font-size: 180px;
+  color: red;
+}
+.screen-game h1 {
+  margin: 0px;
+}
+.screen-game > div > svg {
+  -webkit-box-reflect: below -68px -webkit-gradient(
+      linear,
+      right top,
+      right bottom,
+      from(transparent),
+      to(rgba(255, 255, 255, 0.4))
+    );
+}
+.screen-setting > h1 {
+  margin: 0px;
+}
+.screen-setting > div {
+  font-size: 150px;
+  color: rgb(134, 134, 134);
+}
+.screen-setting > div > svg {
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, right top, right
+        bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
+.screen-coverflow > h1 {
+  margin: 0px;
+}
+.screen-coverflow > div {
+  font-size: 150px;
+  color: rgb(255, 145, 0);
+}
+.screen-coverflow > div > svg {
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, right top, right
+        bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
+.artists-screen > h1 {
+  margin: 0px;
+}
+.artists-screen > div {
+  font-size: 180px;
+  color: rgb(174, 0, 255);
+}
+.artists-screen > div > svg {
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, right top, right
+        bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
+.albums-screen > h1 {
+  margin: 0px;
+}
+.albums-screen > div {
+  font-size: 180px;
+  color: rgb(174, 0, 255);
+}
+.albums-screen > div > svg {
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, right top, right
+        bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
+
+/* SCREENS //////////////////////////////////////////////////////////////////////////////////////////// */
+
+.screen-game {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.screen-music {
+  background-color: #ffb500;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.screen-setting {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.screen-coverflow {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  overflow: hidden;
+}
